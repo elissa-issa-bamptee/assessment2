@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-container">
+        <i class="fas fa-bars hamburger"></i>
+        <ul class="nav-links">
+          <li><a href="#hero">Welcome</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#reference">References</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <div class="hero-overlay"></div>
+      <h1>Elissa Issa</h1>
+      <div id="description">
+        I'm a fourth year CCE multimedia student proficient in full-stack web development and especially in 
+        front-end and design. A confident communicator and strategic thinker, eager to apply my skills and 
+        enhance my expertise.
+      </div>
+      <a href="#projects">
+        <button class="projects-link">See projects</button>
+      </a>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <div class="project">
+        <div class="project-title">Product Store</div>
+        <div class="project-description">
+          Full-stack website using React, MongoDB, Nodejs. <br />
+          A website where you can create, read, update and delete an item.
+        </div>
+        <div class="project-image">
+          <img src="./assets/images/productstore.png" alt="Screenshot of Product Store web app" />
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Job Portal</div>
+        <div class="project-description">
+          Full-stack website using HTML, CSS, Javascript, mySQL, Laravel PHP. <br />
+          A platform where users can sign-up/log-in and browse for job offers then apply to them. Or upload job opportunities and track their status.
+        </div>
+        <div class="project-image">
+          <img src="./assets/images/jobportal.png" alt="Screenshot of Job Portal application" />
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-title">Javafx Store</div>
+        <div class="project-description">
+          A huge application with admins and clients. It covers users, products, and orders management (CRUD). Plus, filtering and searching services, shopping carts, order tracking, reviews and reports. 
+        </div>
+        <div class="project-image">
+          <img src="./assets/images/javafx.png" alt="Screenshot of JavaFX Store desktop app" />
+        </div>
+      </div>
+    </section>
+
+    <section id="weather">
+     <h2>Current Weather</h2>
+     <button id="get-weather" type="button">Get Weather</button>
+     <div id="weather-info"></div>
+    </section>
+
+
+    <section id="testimonials" data-aos="fade-up">
+      <h2>Testimonials</h2>
+
+      <div class="carousel">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+
+        <div class="testimonials-container">
+          <div class="testimonial" id="t1">
+            <p>"Elissa is a creative problem-solver with a great sense of design!"</p>
+            <h4>- Sarah K.</h4>
+          </div>
+
+          <div class="testimonial" id="t2">
+            <p>"She built a fully responsive job portal for us, amazing job!"</p>
+            <h4>- Marc D.</h4>
+          </div>
+
+          <div class="testimonial" id="t3">
+            <p>"I loved working with Elissa, she's a true professional."</p>
+            <h4>- Lara N.</h4>
+          </div>
+        </div>
+
+        <div class="navigation">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+      </div>
+  </section>
+
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact Me</h2>
+      <button id="contact-btn" type="button">If you would like to get in contact click here</button>
+      <form class="contact-form" action="https://forms" method="POST">
+        <table>
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" id="name" name="name" required /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="message">Message:</label></td>
+            <td><textarea id="message" name="message" rows="5" required></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="submit">Send</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+
+    <section id="reference">
+      <h2>For additional infos feel free to download my resume</h2>
+      <a href="#" >
+        <button class="reference-link">Download my Resume</button>
+      </a>
+    </section>
+
+    <footer id="footer">
+      <div>&copy; 2025 Elissa Issa</div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
